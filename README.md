@@ -1,14 +1,22 @@
 OEA_sem/
+
 │
+
 ├── README.md
+
 │
+
 ├── requirements.txt
+
 │
+
 ├── data/
+
 │   ├── raw/
-│   │   └── kilby_instances/
-│   │       ├── k01.vrp
-│   │       ├── k02.vrp
+
+│   │   └── A/
+│   │       ├── problem_1.vrp
+│   │       ├── problem_1.sol
 │   │       └── ...
 │   │
 │   └── processed/
