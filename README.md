@@ -1,73 +1,60 @@
-OEA_sem/
+# Project Structure
 
+```text
+.
+├───data
+├───experiments
+├───report
+│       analysis_of_results.ipynb
 │
-
-├── README.md
-
-│
-
-├── requirements.txt
-
-│
-
-├── data/
-
-│   ├── raw/
-
-│   │   └── A/
-│   │       ├── problem_1.vrp
-│   │       ├── problem_1.sol
-│   │       └── ...
+├───results
+│   ├───plots
+│   │   └───A-n38-k5
+│   │           comparison.html
+│   │           comparison.png
 │   │
-│   └── processed/
-│       └── cached_instances/
+│   └───summaries
+│           rl_ea_summary.csv
+│           vanilla_ea_detailed.csv
+│           vanilla_ea_summary.csv
 │
-├── src/
-│   ├── core/
-│   │   ├── instance_loader.py
-│   │   ├── dvrp_simulator.py
-│   │   ├── solution_representation.py
-│   │   └── evaluation.py
+├───scripts
+│       cache_instances.py
+│       run_exp01.py
+│       run_exp02.py
+│       save.py
+│       train_rl.py
+│
+├───src
+│   │   roots.py
 │   │
-│   ├── ea/
-│   │   ├── population.py
-│   │   ├── selection.py
-│   │   ├── crossover.py
-│   │   ├── mutation.py
-│   │   └── elitism.py
+│   ├───core
+│   │       instance_loader.py
+│   │       solution_representation.py
 │   │
-│   ├── frameworks/
-│   │   ├── vanilla_ea/
-│   │   │   ├── config.yaml
-│   │   │   └── run.py
+│   ├───ea
+│   │       crossover.py
+│   │       evolutionary_algorithm.py
+│   │       mutation.py
+│   │       population.py
+│   │       selection.py
+│   │
+│   ├───frameworks
+│   │   ├───rl_param_optimizer
+│   │   │       agent.py
+│   │   │       config_rl.yaml
+│   │   │       env.py
 │   │   │
-│   │   ├── rl_param_optimizer/
-│   │   │   ├── env.py
-│   │   │   ├── agent.py
-│   │   │   ├── config.yaml
-│   │   │   └── run.py
-│   │   │
-│   │   └── conv_param_optimizer/
-│   │       ├── optimizer.py
-│   │       ├── config.yaml
-│   │       └── run.py
+│   │   └───vanilla_ea
+│   │           config.yaml
 │   │
-│   └── utils/
-│       ├── logging.py
-│       ├── seeding.py
-│       └── metrics.py
+│   └───utils
+│           find_best.py
+│           logging.py
+│           metrics.py
+│           seeding.py
+│           visualization.py
 │
-├── experiments/
-│   ├── exp_01_vanilla/
-│   ├── exp_02_rl/
-│   └── exp_03_conv/
-│
-├── results/
-│   ├── tables/
-│   ├── plots/
-│   └── summaries/
-│
-└── report/
-    ├── methodology.md
-    ├── results.md
-    └── discussion.md
+└───tests
+        test_instance_loader.ipynb
+        test_metrics_and_solrep.ipynb
