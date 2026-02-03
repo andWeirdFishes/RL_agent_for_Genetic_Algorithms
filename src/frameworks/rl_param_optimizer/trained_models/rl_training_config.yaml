@@ -1,0 +1,26 @@
+mu: 200
+lambd: 100
+mutation_rate: 0.3
+generations: 400
+plus_selection: true
+early_stopping_patience: 20
+n_check_gen: 20
+rl:
+  learning_rate: 0.0003
+  n_steps: 512
+  batch_size: 64
+  n_epochs: 5
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_range: 0.2
+  ent_coef: 0.02
+  vf_coef: 0.5
+  max_grad_norm: 0.5
+  total_timesteps: 10000
+  n_parallel_envs: 4
+  save_freq: 500
+  max_training_instances: 27
+experiment:
+  num_runs: 3
+  seed_start: 42
+  n_log_period: 1

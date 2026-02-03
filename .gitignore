@@ -1,0 +1,7 @@
+*.vrp
+*.sol
+*.pkl
+*.csv
+*.png
+*.html
+*pycache*

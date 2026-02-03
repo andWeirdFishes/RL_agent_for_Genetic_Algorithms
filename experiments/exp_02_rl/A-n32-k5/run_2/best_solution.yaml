@@ -1,0 +1,76 @@
+instance: A-n32-k5
+run_id: 2
+seed: 2
+genotype:
+- 18
+- 8
+- 28
+- 4
+- 11
+- 9
+- 22
+- 27
+- 23
+- 2
+- 3
+- 6
+- 14
+- 17
+- 19
+- 31
+- 21
+- 13
+- 7
+- 29
+- 15
+- 10
+- 25
+- 5
+- 20
+- 24
+- 26
+- 16
+- 1
+- 12
+- 30
+routes:
+- - 18
+  - 8
+  - 28
+  - 4
+  - 11
+  - 9
+  - 22
+- - 27
+  - 23
+  - 2
+  - 3
+  - 6
+  - 14
+- - 17
+  - 19
+  - 31
+  - 21
+  - 13
+  - 7
+- - 29
+  - 15
+  - 10
+  - 25
+  - 5
+  - 20
+- - 24
+  - 26
+  - 16
+  - 1
+  - 12
+  - 30
+metrics:
+  cost: 877.0225972050649
+  gap_from_optimal: 11.865127194523588
+  dispatch_rounds: 1
+  dispatch_rounds_increase: 0.0
+  avg_route_utilization: 82.0
+  is_feasible: true
+  capacity_violations: 0
+  num_routes: 5

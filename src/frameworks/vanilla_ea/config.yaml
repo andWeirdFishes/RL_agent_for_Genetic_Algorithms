@@ -1,0 +1,11 @@
+mu: 800
+lambd: 400
+mutation_rate: 0.3
+generations: 1000
+plus_selection: true
+early_stopping_patience: 50
+
+experiment:
+  num_runs: 5
+  seed_start: 0
+  n_log_period: 1
