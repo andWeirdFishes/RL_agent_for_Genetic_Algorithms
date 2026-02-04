@@ -5,3 +5,6 @@
 *.png
 *.html
 *pycache*
+experiments
+data
+artifacts
